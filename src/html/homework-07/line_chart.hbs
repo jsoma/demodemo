@@ -1,0 +1,21 @@
+<div class="row">
+  <div class="col-12">
+    <h3>2. A line chart about stock prices</h3>
+    <p>This is a graph of AAPL stock price over time. Or <em>will</em> be, once you add the <code>&lt;div&gt;</code> the JavaScript is trying to place the svg into.</p>
+    <p>Once you get that fixed, it'll be a very pleasant line chart, but I'd love to actually see the data points themselves!</p>
+    <p>Edit <code>line-chart.js</code> to add circles for each data point. They should line up with the line, and be the same color.</p>
+    <p>When someone hovers over a point, it should <strong>grow slightly larger</strong>, and all of the information should be displayed on the right-hand column (see <code>AAPL.csv</code> for the fields).</p>
+    <p>When someone removes their mouse from a dot, the circle should return to its original size, but the information may still be shown. When the page loads there should <strong>not</strong> be anything in that column.</p>
+  </div>
+  <div class="col-9">
+
+    <div id="line-chart"></div>
+
+  </div>
+  <div class="col-3 mt-4">
+      <div id="aapl-info" style="display: none">
+        <p><strong>Date:</strong><br><span id="aapl-date"></span></p>
+        <p><strong>Close:</strong><br><span id="aapl-close"></span></p>
+      </div>
+  </div>
+</div>
